@@ -1,0 +1,49 @@
+html {
+     font-size: 62.5%;
+     font-family: 'Roboto', sans-serif;
+     box-sizing: border-box;
+}
+
+*, *::before, 
+*::after {
+     box-sizing: inherit;
+     padding: 0;
+     margin: 0;
+}
+
+
+div.container {
+     width: 1280px;
+     max-width: 100%;
+     min-width: 900px;
+     border: 2px solid crimson;
+     margin: 2rem auto;
+     padding: 1rem;
+}
+
+div.building-zone {
+     width: 95%;
+     margin: 2em auto;
+     border-top: 1px solid gray;
+     border-bottom: 1px solid gray;
+     padding: 1em;
+}
+
+div.building-zone h2 {
+     margin-bottom: 1em;
+     font-size: 3rem;
+}
+
+div.building-zone ul {
+     display: flex;
+     flex-wrap: wrap;
+}
+
+div.building-zone ul li {
+     margin: 1rem 2rem;
+}
+
+div.building-zone ul li,
+div.building-zone ul li a {
+     font-size: 1.5rem;
+}
