@@ -41,7 +41,9 @@ const queryApi = async () => {
                     htmlDivZones += `<div class="building-zone"> 
                                    <h2>${zone[0]}</h2>
                                    <ul>`;
-                                   zone[1].forEach(names => { 
+                                   zone[1].sort((a, b) => {
+                                        return (a.buildingname < b.buildingname) ? -1 : (a.buildingname > b.buildingname) ? 1 : 0 
+                                   }).forEach(names => { 
                                         if (names.black) {
                                              htmlDivZones += `<li>${names.buildingname}</li>`;
                                         } else {
@@ -59,7 +61,9 @@ const queryApi = async () => {
                     htmlDivZones += `<div class="building-zone"> 
                                    <h2>${zone[0]}</h2>
                                    <ul>`;
-                                   zone[1].forEach(names => { 
+                                   zone[1].sort((a, b) => {
+                                        return (a.buildingname < b.buildingname) ? -1 : (a.buildingname > b.buildingname) ? 1 : 0 
+                                   }).forEach(names => { 
                                         if (names.black) {
                                              htmlDivZones += `<li>${names.buildingname}</li>`;
                                         } else {
